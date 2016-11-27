@@ -1,0 +1,8 @@
+
+<div class="sidebar" ng-controller="TestController">
+    <accordion style="margin-top: 100px;">
+        <expander class='expander' ng-repeat='expander in expanders' expander-title='expander.title'>
+            {{expander.text}}
+        </expander>
+    </accordion>
+</div>

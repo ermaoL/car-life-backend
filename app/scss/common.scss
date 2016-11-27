@@ -1,0 +1,31 @@
+//color
+$color-default:#23b7e5;
+$color-border:#cfdbe2;
+$color-bg:#f5f7fa;
+$color-green:#27c24c;
+$color-red:#ee3d3d;
+$color-white:#ffffff;
+
+// height or width
+$height-topbar: 55px;
+$width-sidebar: 220px;
+
+%vertical-middle {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin opacityRange($opacity) {
+  opacity: $opacity;
+  filter: Alpha(opacity=$opacity*100);
+}
